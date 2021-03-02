@@ -1,5 +1,4 @@
 # Gazo-diff-checker
-画像の差分比較チェックツール
 
 画像をpuppeteerで取得し、Gazo-sanで画像の比較をおこないます。
 
@@ -10,7 +9,7 @@
 # docker-compose exec app bash
 root@6aa77f406dcb:/# node capture.js
 ```
-### キャプチャの差分をGazo-sanで取得し画像で保存する
+### キャプチャの差分をGazo-sanで取得
 
 ```
 # docker-compose exec gazosan bash
