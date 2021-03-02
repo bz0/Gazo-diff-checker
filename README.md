@@ -1,6 +1,6 @@
 # Gazo-diff-checker
 
-画像をpuppeteerで取得し、Gazo-sanで画像の比較をおこないます。
+サイトのキャプチャをpuppeteerで取得し、Gazo-sanで画像の比較をおこないます。
 
 
 ### サイトのキャプチャをpuppeteerで取得し保存
