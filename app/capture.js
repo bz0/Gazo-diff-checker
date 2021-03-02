@@ -1,4 +1,7 @@
 const puppeteer = require('puppeteer');
+const moment    = require("moment");
+
+const outputDir = "../screenshots";
 
 async function scrollToBottom(page, viewportHeight) {
   const getScrollHeight = () => {
@@ -50,9 +53,11 @@ async function scrollToBottom(page, viewportHeight) {
   await page.goto('https://www.minnanokaigo.com/');
   await scrollToBottom(page, viewportHeight);
 
+  const today = moment().format("YYYYMMDD");
+
   // await page.waitForNavigation({waitUntil:'networkidle2', timeout:5000})
   //            .catch(e => console.log('timeout exceed. proceed to next operation'))
-  await page.screenshot({ path: 'fullpage.png', fullPage: true });
+  await page.screenshot({ path: outputDir + '/' + today + '_top.png', fullPage: true });
 
   // ブラウザを終了.
   await browser.close();
